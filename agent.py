@@ -86,9 +86,6 @@ customer_service_agent = Agent(
     tools=[],
 )
 
-# Eliminado para evitar handoff circular:
-# panalab_cloudflare_agent.handoffs.append(customer_service_agent)
-
 async def get_response(
     agent: Agent,
     conversation_id: str,
